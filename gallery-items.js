@@ -37,13 +37,15 @@ const openPhotoFn = (e) => {
         return
     }
     modalPhotoEl.classList.add("is-open")
-    fn(photoUrlEl, altPhotoEl)
+    photoAttributesfn
+        (photoUrlEl, altPhotoEl)
     imgModalEl.dataset.index = 0
 }
 
 const closingModalPhotoFn = () => {
     modalPhotoEl.classList.remove("is-open")
-    fn('', '')
+    photoAttributesfn
+        ('', '')
 }
 
 galleryEl.addEventListener('click', openPhotoFn)
@@ -86,7 +88,8 @@ function ArrowRight() {
     }
     sliderСarouselFn(1, index)
 }
-const fn = (src, alt) => {
-    imgModalEl.src = src
-    imgModalEl.alt = alt
-}
+const photoAttributesfn
+    = (src, alt) => {
+        imgModalEl.src = src
+        imgModalEl.alt = alt
+    }
