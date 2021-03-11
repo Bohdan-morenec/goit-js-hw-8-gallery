@@ -49,6 +49,7 @@ const closingModalPhotoFn = () => {
 galleryEl.addEventListener('click', openPhotoFn)
 buttonEl.addEventListener('click', closingModalPhotoFn)
 modalOverlay.addEventListener('click', closingModalPhotoFn)
+
 document.addEventListener('keyup', (e => {
     const key = e.code;
 
